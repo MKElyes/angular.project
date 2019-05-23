@@ -1,0 +1,11 @@
+<input type="text" (keyup)='login()'>
+<input [(ngModel)]="name" #ctrl="ngModel" required>
+ 
+<p>Value: {{ name }}</p>
+<p>Valid: {{ ctrl.valid }}</p>
+
+<button (click)="setValue()">Set value</button>
+
+<input type="number" [(ngModel)]="val1" (keyup.enter)='onkeyup()' required>
+<input type="number" [(ngModel)]="val2" (keyup.enter)='onkeyup()' required>
+<button (click)='add()'>Equal</button>

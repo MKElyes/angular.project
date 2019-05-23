@@ -1,0 +1,24 @@
+<div >
+User Name:
+<input type="text" placeholder="username" [(ngModel)]='nom' >
+<br>
+<br>
+Email:
+<input type="email" placeholder="email"  [(ngModel)]="email">
+<br>
+<br>
+Password:
+<input type="passwaord"  [(ngModel)]='pw'>
+<br>
+<br>
+<button type="button" (click)='save()'>Submit</button>
+</div>
+<!-- 
+<form [formGroup]='exampleForm'>
+  UserName:
+  <input type="text" formControlName="username">
+  Email:
+  <input type="text" formControlName="email">
+  Password:
+  <input type="password" formControlName="pw">
+</form> -->
